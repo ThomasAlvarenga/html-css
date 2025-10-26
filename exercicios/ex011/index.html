@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <!-- <picture>
+        <source media="(max-width: 750px)" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="Imagem flexivel">
+    </picture> -->
+
+    <picture>
+        <source media="(min-width: 1050px)" srcset="imagem/foto-g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-p.png" alt="Imagem flexivel">
+    </picture>
+
+    <!-- <audio src="midia/On The Flip - The Grey Room _ Density & Time.mp3" controls></audio> -->
+    <h1>reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio.<a href="midia/happy-mistake.mp3">Clique aqui para baixar o arquivo mp3</a>
+        </p>
+    </audio>
+    <p>Infelizmente seu navegador não consegue reproduzir o áudio.<a href="midia/happy-mistake.mp3" target="_blank" rel="external">Clique aqui para baixar o arquivo mp3</a>
+</body>
+</html>

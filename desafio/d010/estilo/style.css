@@ -33,9 +33,7 @@ body {
 
 a.externo::after {
     content: '\00A0\1f517';
-
 }
-
 
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));

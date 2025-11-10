@@ -1,0 +1,128 @@
+display: flex;
+
+flex-direction: row;
+	Padrao é row; (horizontal)
+	E da esquerda para a direita
+
+flex direction: row-reverse; 
+	Continua em linha
+	Mas da direita para esquerda
+
+
+flex-direction: column;
+	Fica em modo coluna e nao em linha
+	De cima para baixo
+
+flex-directon: column-reverse;
+	Continua em coluna
+	Mas de baixo para cima
+
+Ao criar um display:flex é criado um EIXO(axis)
+
+ao usar o flex-direction: row;
+				o eixo principal criado é o main-axis. onde tem o main-start e o main-end do seu container
+
+nele tambem é criado um EIXO(axis) na transversal (vertical) chamado de cross-axis. Onde ele tem o cross-start e o cross-end.
+
+ja no flex-direction:row-reverse;
+                    O eixo principal será alterado ficando da direita para a esquerda.
+                    Já o cross-axis permanece de cima para baixo.
+
+Quando vamos para o flex-direction: column;
+                    As coisas mudam, O eixo principal main-axis vai ser
+											invertido e agora fica de cima para baixo.
+                    E o cross-axis fica da esquerda para a direita.
+											
+Ja no flex-direction:column;
+					O eixo principal main-axis vai ser de baixo para cima 					
+					O cross-axis na horizontal da esquerda para a direita também
+
+
+
+Wrap significa empacotamento ou encapsulamento
+
+Flex-wrap - Configura o comportamento da capsula. Vai dizer como o container vai se comportar 
+	Container é como se fosse os pais e o itens dentro são os filhos.
+
+	Por padrão o flex-wrap esta configurado como um rowrap, que significa nao encapsular. Ele nao vai quebrar o conteudo dentro do conteiner. exemplo: nowrap não vai se ajudar dentro do container. E voce dizer nao saida a sequencia que eu ordenei
+
+O encolhimento dentro do flex box vai depender do conteudo que a dentro dele
+
+O tamanho de um bloco vai depender muito do conteudo que a dentro dele 
+
+	outra configuraçao do flex-wrap é o wrap. Ao diminuir bastante o conteudo para passar dos tamanhos dos itens. os itens vao comecar a quebra no eixo(axis) cross-axis. entao a quebra de item vai fazer o item ir sentido o cross-axis.
+
+	 Quando utilizamos o flex-wrap: wrap-reverse a quebra do ultimo item no lugar de ir para o sendo do cross-axis ele ia para o sentido inverso movendo os os ultimos itens.
+
+
+Para fazer o shorthand do flex, você deve utilizar o flex-flow e a ordem dentro dele vai ser flex-direction + flex-wrap.
+
+exemplo: flex-flow: row nowrap;
+
+
+justify-content vai fazer o alinhamento relacionado ao main-axis.(eixo principal)
+justify-content: flex-start  vai deixar o primeiro item no main-start, se tiver espaço dentor do container ele sempre vai ficar no main-end.
+
+justify-content:flex-end ; aqui ele ja iniciara no main-end e o espaço final ficara no main-start.
+
+justify-content:center; ele vai centralizar no meio do main-axis. Os espaço ficaram no main-start e no main-end.
+
+
+Alinhamentos de espaçamento...
+
+justify-content:space-between Ele vai colocar o primeiro item no main-start e o ultimo item no main-end. Todos os outros item vai ficar entre eles com o espaçamento igual.
+
+justify-content:space-evenly ele vai colocar todos os item dentro do container fazendo com que tenho espaçamento igual para todos eles. inclusive antes do primeiro e depois do ultimo tambem.
+
+justify-content:space-around ele vai fazer uma conta de quantos item tem e vai dividir o espaço para todos e depois nesses espaços ele vai centralizar cada um no seu lugar separado.
+
+
+Align-items: sempre vai ser no sentido do cross-axis. Por padrao ele tem o stretch(ele significa esticar). Então se você aumentar o seu cross-axis voce vai esticar os elementos.
+
+Align-items:flex-start; vai sempre grudar o primeiro elemento no cross-start.  O espaço ficará junto ao cross-end.
+
+Align-items:flex-end; vai se juntar o primeiro elemento no cross-end. O espaço ficará grudado ao cross-start.
+
+Aling-items:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
